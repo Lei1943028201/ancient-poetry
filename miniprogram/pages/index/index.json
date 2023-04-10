@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "cc-classify": "../../components/cc-classify/cc-classify",
+    "cc-query": "../../components/cc-query/cc-query",
+    "cc-list-card": "../../components/cc-list-card/cc-list-card"
+  }
+}

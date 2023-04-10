@@ -1,0 +1,9 @@
+/**app.wxss**/
+@import './css/common.scss';
+page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #F5F7FA;
+  color: #303133;
+} 

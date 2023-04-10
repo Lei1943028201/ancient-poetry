@@ -1,0 +1,22 @@
+<!--pages/detail/detail.wxml-->
+<view class="yl-detail">
+  <view class="yl-t-center yl-h2">《{{title}}》</view>
+  <view class="yl-t-center yl-ancient-poetry--sub_title">
+  <text>{{name}}</text>
+  <text> [{{dynasty}}]</text>
+  </view>
+  <view class="yl-t-center">
+    <rich-text nodes="{{text}}"/>
+  </view>
+  <view class="yl-h6" wx:if="{{translatedText}}">译文</view>
+  <view class="yl-ancient-poetry--translated_text">
+    <text>{{translatedText}}</text>
+  </view>
+  <view class="yl-h6" wx:if="{{explain.length}}">注释</view>
+  <view class="yl-ancient-poetry--explain">
+    <view class="yl-ancient-poetry--explain_item" 
+    wx:for="{{explain}}">
+    （{{index + 1}}）{{item}}
+    </view>
+  </view>
+</view>

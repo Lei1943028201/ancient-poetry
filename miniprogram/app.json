@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/about/index",
+    "pages/detail/detail"
+  ],
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#20894D",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/common/gushicijianshang.png",
+        "selectedIconPath": "/images/common/gushicijianshang-active.png"
+      },
+      {
+        "pagePath": "pages/about/index",
+        "text": "关于我们",
+        "iconPath": "/images/common/wode.png",
+        "selectedIconPath": "/images/common/wode-active.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "古诗词",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

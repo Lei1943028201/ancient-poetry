@@ -1,0 +1,15 @@
+{
+  "name": "ancient-poetry",
+  "version": "0.0.1",
+  "description": "古诗词大全",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "@vant/weapp": "^1.10.14"
+  },
+  "devDependencies": {
+    "miniprogram-api-typings": "^2.12.0"
+  }
+}

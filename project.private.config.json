@@ -1,0 +1,7 @@
+{
+  "description": "古诗词大全",
+  "projectname": "ancient-poetry",
+  "setting": {
+    "compileHotReLoad": true
+  }
+}

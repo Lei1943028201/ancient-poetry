@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<scroll-view class="scroll-view_H" scroll-y="true" bindscrolltolower="scroll" style="width: 100%">
+    <!-- <cc-query></cc-query> -->
+    <cc-classify bind:query="clickQuery"/>
+    <cc-list-card
+    bindtap="clickListCard"
+    data-title="{{item.title}}"
+    ancient-poetry="{{item}}"
+    wx:key="{{index}}"
+    wx:for="{{ancientPoetryList}}"/>
+</scroll-view>

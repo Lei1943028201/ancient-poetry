@@ -1,0 +1,58 @@
+<!--components/cc-classify/cc-classify.wxml-->
+<view class="yl-classify">
+  <scroll-view  scroll-y="true" style="width: 100%; height: 380px;">
+    <view class="yl-classify-content">
+      <text class="yl-classify-label">类型</text>
+      <view class="yl-classify-tags">
+        <text class="{{item.value === active.type ? 'yl-classify-tag active': 'yl-classify-tag'}}"
+          bindtap="clickTag"
+          data-key="type"
+          data-code="{{item.code}}"
+          data-value="{{item.value}}"
+          wx:for="{{type}}"
+          wx:key="{{item.code}}">{{item.value}}</text>
+      </view>
+    </view>
+    <view class="yl-classify-content">
+      <text class="yl-classify-label">作者</text> 
+      <view  class="yl-classify-tags">
+        <text class="{{item.value === active.author ? 'yl-classify-tag active': 'yl-classify-tag'}}"
+          bindtap="clickTag" 
+          data-key="author"
+          data-code="{{item.code}}"
+          data-value="{{item.value}}"
+          wx:for="{{author}}"
+          wx:key="{{item.code}}">{{item.value}}</text>
+      </view>
+    </view>
+    <view class="yl-classify-content">
+      <text class="yl-classify-label">朝代</text> 
+      <view  class="yl-classify-tags">
+      <text class="{{item.value === active.dynasty ? 'yl-classify-tag active': 'yl-classify-tag'}}"
+          bindtap="clickTag"
+          data-key="dynasty"
+          data-code="{{item.code}}"
+          data-value="{{item.value}}"
+          wx:for="{{dynasty}}"
+          wx:key="{{item.code}}">{{item.value}}</text>
+      </view>
+    </view>
+    <view class="yl-classify-content">
+      <text class="yl-classify-label">形式</text>
+      <view  class="yl-classify-tags">
+      <text class="{{item.value === active.pattern ? 'yl-classify-tag active': 'yl-classify-tag'}}"
+          bindtap="clickTag"
+          data-key="pattern"
+          data-code="{{item.code}}"
+          data-value="{{item.value}}"
+          wx:for="{{pattern}}"
+          wx:key="{{item.code}}">{{item.value}}</text>
+      </view>
+    </view>
+  </scroll-view>
+  <van-button
+    bindtap="clickQuery"
+    custom-style="margin-top: 12px;"
+    type="primary"
+    block round color="#20894D">找诗词</van-button>
+</view>

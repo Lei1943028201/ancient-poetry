@@ -1,0 +1,19 @@
+<!--components/cc-query/cc-query.wxml-->
+<view class="yl-query">
+  <view class="{{show ? 'yl-query-input open': 'yl-query-input'}}">
+    <text class="yl-query-item" bindtap="openPopup">类型</text>
+    <text class="yl-query-item" bindtap="openPopup">作者</text>
+    <text class="yl-query-item" bindtap="openPopup">朝代</text>
+    <text class="yl-query-item" bindtap="openPopup">形式</text>
+  </view>  
+  <van-popup 
+  position="top"
+  show="{{ show }}"
+  overlay-style="background: none"
+  custom-style="background: none;padding:0 12px;"
+   bind:close="onClose">
+    <view class="yl-query-popup-content">
+      
+    </view>
+   </van-popup>
+</view>

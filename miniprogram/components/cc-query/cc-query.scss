@@ -1,0 +1,28 @@
+/* components/cc-query/cc-query.wxss */
+.yl-query-input{
+  background: #ffffff;
+  margin: 12px;
+  height: 36px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+  font-size: 12px;
+  &.open{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .yl-query-item{
+    margin: 0 6px;
+  }
+}
+
+.yl-query-popup-content{
+  height: 100px;
+  margin-top: 50px;
+  margin-bottom: 12px;
+  background: #fff;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  box-shadow: 0px 0px 15px 5px rgba(32, 137, 77, 0.2) inset;
+}

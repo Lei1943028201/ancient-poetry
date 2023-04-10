@@ -1,0 +1,20 @@
+<!--components/cc-list-card/cc-list-card.wxml-->
+<view class="yl-list-card">
+    <text class="yl-avatar"></text>
+    <view class="yl-list-card--center">
+      <view class="title">
+        {{ancientPoetry.title}}
+      </view>
+      <view class="name">
+        {{ancientPoetry.name}} [{{ancientPoetry.dynasty}}]
+      </view>
+      <view>
+        <text class="yl-rate" style="font-size: 12px;">评价</text><van-rate color="#20894D" size="12px" gutter="0px" readonly value="5"/>
+      </view>
+    </view>
+    <van-button 
+      catchtap="clickCopy"
+      custom-style="color: #20894D; font-weight: bold;"
+      type="info" size="small"
+      round color="rgba(32,137,77, 0.2)">复制</van-button>
+  </view>
